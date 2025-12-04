@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEFY LAWS — Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #111;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .nav-links a, .right-icons a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .subnav {
+            display: flex;
+            justify-content: center;
+            background-color: #151515;
+            padding: 10px 0;
+        }
+
+        .subnav a {
+            margin: 0 20px;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        /* HERO VIDEO */
+        .hero video {
+            width: 100%;
+            display: block;
+        }
+
+        /* TRAINING SECTION */
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tabs button {
+            background-color: #222;
+            border: none;
+            padding: 12px 25px;
+            margin: 0 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .tabs button.active {
+            background-color: #444;
+        }
+
+        .grid-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 80px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .grid-item figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div>DEFY LAWS</div>
+
+    <div class="nav-links">
+        <a href="#">WOMEN</a>
+        <a href="#">MEN</a>
+        <a href="#">GIFTS</a>
+        <a href="#">NEW</a>
+        <a href="#">BE INSPIRED</a>
+        <a href="#">STORES</a>
+    </div>
+
+    <div class="right-icons">
+        <a href="#">🔍</a>
+        <a href="#">👤</a>
+        <a href="#">❤️</a>
+    </div>
+</div>
+
+<!-- SUBNAV -->
+<div class="subnav">
+    <a href="#">Home</a>
+    <a href="#">Featured</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">News</a>
+</div>
+
+<!-- PAGE CONTENT -->
+{% block content %}{% endblock %}
+
+</body>
+</html>
+

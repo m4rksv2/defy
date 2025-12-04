@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO VIDEO -->
+<section class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="{{ url_for('static', filename='videos/hero.mov') }}" type="video/mp4">
+        <source src="{{ url_for('static', filename='videos/hero.mov') }}" type="video/quicktime">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- TRAINING SECTION -->
+<h2 class="section-title">HOW DO YOU TRAIN?</h2>
+
+<div class="tabs">
+    <button class="active">Women</button>
+    <button>Men</button>
+    <button>Streetwear</button>
+</div>
+
+<div class="grid-row">
+    <figure class="grid-item">
+        <img src="{{ url_for('static', filename='images/lifting.jpg') }}" alt="Lifting">
+        <figcaption>Lifting</figcaption>
+    </figure>
+
+    <figure class="grid-item">
+        <img src="{{ url_for('static', filename='images/bjj.jpg') }}" alt="Brazilian Jiu-Jitsu">
+        <figcaption>Brazilian Jiu-Jitsu</figcaption>
+    </figure>
+
+    <figure class="grid-item">
+        <img src="{{ url_for('static', filename='images/muaythai.jpg') }}" alt="Muay Thai">
+        <figcaption>Muay Thai</figcaption>
+    </figure>
+
+    <figure class="grid-item">
+        <img src="{{ url_for('static', filename='images/restday.jpg') }}" alt="Rest Day">
+        <figcaption>Rest Day</figcaption>
+    </figure>
+</div>
+
+{% endblock %}
+
